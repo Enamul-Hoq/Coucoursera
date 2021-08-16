@@ -152,3 +152,24 @@ while True:
     n=n-1 # this is called iteration variable and it means loop is changing, if we don't use it, then it means this loop will continue for the forever
 print('Done!')
 
+#16th of August-2021
+import sys
+print(sys.maxsize)
+type(sys.maxsize)
+i='ABC'
+print(i*3)
+
+#while True:
+    line=input('>') # Important to remember that = is an assignment operator
+    print("B")
+    if line[0]=='#':
+        continue
+        print('A')
+    if line=='done':
+        break
+    print(line)
+#print('Done!')
+
+kl="amamdfhewgrtuwei"
+kl.endswith(i)
+
