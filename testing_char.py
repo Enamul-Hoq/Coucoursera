@@ -1,5 +1,13 @@
 #10th of August, 2021
 import os
+#Some problems regarding the commmit files from pycharm to github
+# Problem: I was not able to commit; The error message said stage files for a commit
+# Solution: I checked on terminal by writing: git status
+# then to modify the file I used command: git add (file name) in my case it's testing_char.py
+# To commit files from pycharm to github: select file,then click on git
+# then click commit then put a message then commit and push
+# To add a respiratory from github with pycharm copy the respiratory address from github
+# then come back to the pycharm and click on git/vcs then click clone and phaste the http address
 
 print(ord('G'))
 print(ord("b"))
@@ -320,4 +328,3 @@ import os
 fop=os.system('pythonlearn.pdf')
 inp=fop.read()
 print(len(fop))
-
