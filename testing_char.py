@@ -1,5 +1,6 @@
-
 #10th of August, 2021
+import os
+
 print(ord('G'))
 print(ord("b"))
 
@@ -159,7 +160,7 @@ type(sys.maxsize)
 i='ABC'
 print(i*3)
 
-#while True:
+while True:
     line=input('>') # Important to remember that = is an assignment operator
     print("B")
     if line[0]=='#':
@@ -168,8 +169,155 @@ print(i*3)
     if line=='done':
         break
     print(line)
-#print('Done!')
+print('Done!')
+
+# More about while loop
+
+i=1
+while i<=10:
+    print('Shimul',i)
+    i=i+1
 
 kl="amamdfhewgrtuwei"
 kl.endswith(i)
+x=input(int())
+while x>0:
+    print('pl is positive')
+    x=x-1
+print('Done') # These codes don't work because > not supported between instances of 'str' and 'int'
+
+i=1
+while i<6:
+    print(i)
+    if i==3:
+        break
+    i+=1
+
+i=1
+while i<6:
+    print(i)
+    if i==2:
+        i+=1
+        continue
+    if i==5:
+        break
+    i+=1
+i=1
+while i<6:
+    i+=1
+    if i==3:
+        continue
+    print(i)
+
+# 17th 0f August 2021
+
+f=int(input('Enter a number:'))
+while f<10:
+    if f==3:
+        continue
+    print(f)
+    f+=1
+print('Done!')
+
+import random
+n=random.randrange(20,80,10)
+#print(n)
+while n<=80:
+    n+=1
+    if n>60:
+        print('Your guessing number is too high.')
+    if n<50:
+        print('Your guessing number is too low.')
+    else:
+        print('Congrats! Your guess is correct')
+print('Done!')
+
+#select random number between 1 to 10
+#user has to guess it within five attempts
+#Hints 1) number is too high
+      #2) number is too low
+#when the number matches it will print that you are done! congrats with attempts
+
+
+import random
+numbers=random.randint(1,10)
+number_of_attempts=0
+player_name=input('Hello! May I have your name, please?:')
+print('Alright then!Mr.'+ player_name + ' I am guessing a number between 1 to 10. Are you playing? Go ahead')
+while number_of_attempts<5:
+    number_of_attempts+=1
+    guess_number=int(input())
+    if guess_number>numbers:
+        print("Your number is too high" )
+    if guess_number<numbers:
+        print("Your number is too low ")
+    if guess_number==numbers:
+        break
+if guess_number==numbers:
+    print('Congrats! You guessed correct number in ' + str(number_of_attempts) +' tries')
+else:
+    print('Sorry! You failed to choose correct number in '+ str(number_of_attempts)+
+    ' tries')
+
+while True:
+    line = input('> ')
+    if line == 'done':
+        break
+    #print(line)
+print('Done!')
+
+# For Loop
+total=0
+for x in [3,7,9,2,1,5]:
+    total=total+x
+    print('Total:',total)
+
+
+total=0
+for x in [3,7,9,2,1,5]:
+    total=total+x
+print('Total:', total)
+
+# Finding the largest value or lowest value inside the list
+
+largest=None
+for n in [3,7,9,2,1,5]:
+    if largest is None or n > largest:
+        largest=n
+    print('Loop :',n, largest)
+print("Largest:",largest)
+
+p=[3,7,9,2,1,5]
+maxvalue=p[0]
+print(min(p))
+print(max(p))
+
+# String Strings are an example of Python objects
+index=0
+fruit='bannana'
+while index<len(fruit):
+    letter=fruit[index]
+    print(letter)
+    index+=1
+print('Done!')
+
+word='banna'
+count=0
+for letter in word:
+    if letter=='a':
+        count+=1
+print(count)
+
+
+word.find('a') # to search position of a string
+
+# to open the file mbox.txt, which should be stored in the same
+#folder that you are in when you start Python
+fhand = open('mbox.txt')
+print(fhand)
+
+import os
+fop=os.system('pythonlearn.pdf')
+inp=fop.read()
+print(len(fop))
 
